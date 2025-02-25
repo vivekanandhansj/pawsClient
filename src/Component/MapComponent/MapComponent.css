@@ -1,0 +1,130 @@
+.centered-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.infoWindowContainer {
+  display: flex;
+  flex-direction: row;
+  background: #f4f5fc;
+  padding: 10px;
+  width: max-content;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute; /* Position relative to the marker */
+  bottom: calc(100% + 20px); /* Move the window up above the marker */
+  left: 50%; /* Center the info window horizontally */
+  transform: translateX(-50%); /* Center the window */
+  margin-left: 5px; /* Slightly move the info window to the right */
+}
+
+.infoWindowContainer::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Arrow at the top of the marker */
+  left: 50%;
+  transform: translateX(-50%); /* Center the arrow */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f4f5fc; /* Arrow color */
+}
+
+.infoWindowImgBox {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.infoWindowImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.infoWindowContent {
+  display: flex;
+  flex-direction: column;
+}
+.infoWindowContent p {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0;
+  margin: 5px;
+}
+.infoFeed {
+  border: 2px solid #32c157;
+}
+.infoUnFeed {
+  border: 2px solid #ff6156;
+}
+.infoWindowIcon {
+  color: #24293e;
+}
+
+/* User marker circle styles */
+.user-marker-overlay {
+  position: relative;
+  width: 40px; /* This size is for the overall container */
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* Inner Circle */
+.user-marker-overlay::before {
+  content: "";
+  position: absolute;
+  width: 25px; /* Smaller size for inner circle */
+  height: 16px;
+  background-color: #110dff; /* Inner circle color */
+  border-radius: 50%;
+  top: 40%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 24px rgba(17, 13, 255, 0.24); /* Outer ring blur */
+  animation: blinkAnimation 0.5s infinite alternate; /* Blinking effect */
+}
+
+/* Outer Circle */
+.user-marker-overlay::after {
+  content: "";
+  position: absolute;
+  width: 50px; /* Larger size for outer circle */
+  height: 35px;
+  background-color: transparent;
+  border: 12px solid rgba(17, 13, 255, 0.24); /* Outer circle border with blur effect */
+  border-radius: 50%;
+  top: 40%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 30px rgba(17, 13, 255, 0.24); /* Outer circle blur */
+  animation: blinkAnimation 0.5s infinite alternate; /* Optional blink effect for outer circle */
+}
+
+/* Blink animation */
+@keyframes blinkAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.medical-marker-overlay {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.medical-marker-overlay span {
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.overlayStatus {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 2;
+}
+.SuccessContanier {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 3;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: rgba(50, 193, 87, 0.77);
+  z-index: 1;
+}
+.failOverlay {
+  background-color: rgba(212, 76, 90, 0.55);
+}
+.succImgContainer {
+  height: 70%;
+  margin: 0%;
+  padding: 0%;
+  border: 1px solid #000;
+  background-image: url("../../../assets/dogimages/success.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.succIcon {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  z-index: 2;
+  top: 25%;
+  left: 32%;
+}
+.succCheck {
+  position: absolute;
+  z-index: 2;
+  font-size: 100px;
+  color: #fff;
+  top: 20px;
+  left: 25px;
+}
+.succText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 48px;
+  color: #fff;
+  z-index: 3;
+  font-weight: 700;
+  bottom: 30%;
+  left: 25%;
+}
+.succContent {
+  height: 30%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.succMsg {
+  font-size: 21px;
+  color: #24293e;
+  font-weight: 500;
+}
+.succBtnBox {
+  width: 275px;
+  height: 50px;
+  padding: 0px;
+}
+.succBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 275px;
+  height: 60px;
+  padding: 0px;
+  margin: 0px;
+  background-color: #32c157;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: #f4f5fc;
+  border: none;
+  outline: none;
+}
+.failBtn {
+  background-color: #d44c5a;
+}
+
+@media (min-width: 1024px) {
+  .SuccessContanier {
+    position: absolute;
+    left: 34%;
+    width: 440px;
+    border: 1px solid #ccc;
+    height: 100%;
+  }
+  .succIcon {
+    top: 15%;
+  }
+}

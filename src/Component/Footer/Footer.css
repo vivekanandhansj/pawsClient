@@ -1,0 +1,111 @@
+.footerContainer {
+  height: 13vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.footerMenuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footerMenuIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: #8ebbff;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.footerMenuIcon:hover,
+.footerMenuIcon:focus {
+  background-color: #8ebbff;
+}
+.footerMenus {
+  font-size: 33px;
+  color: #8ebbff;
+}
+.footerMenuIcon:hover .footerMenus {
+  font-size: 33px;
+  color: #2d3652;
+}
+.footerActive {
+  background-color: #8ebbff;
+  color: #2d3652;
+  font-size: 33px;
+}
+.footerIconActive {
+  color: #2d3652;
+}
+.footerMenuName {
+  font-size: 17px;
+  color: #f4f5fc;
+  font-weight: 500;
+  margin-top: 10px;
+}
+@media (min-width: 1024px) {
+  .footerContainer {
+    position: absolute;
+    width: 500px;
+    top: -18px;
+    display: flex;
+    justify-content: space-around;
+    margin: -4px 100px;
+  }
+  .footerMenuList {
+    position: relative;
+    display: inline-block;
+  }
+  .footerMenuIcon {
+    position: absolute;
+    font-size: 17px;
+    color: #f4f5fc;
+    font-weight: 500;
+    width: 120px;
+  }
+  .footerMenus {
+    font-size: 18px;
+  }
+  .footerMenuIcon:hover,
+  .footerMenuIcon:focus {
+    background-color: #8ebbff;
+    color: #2d3652;
+  }
+  .footerMenuIcon:hover .footerMenus {
+    font-size: 17px;
+    color: #2d3652;
+  }
+  .footerActive {
+    background-color: #8ebbff;
+    color: #2d3652;
+    font-size: 17px;
+  }
+  .footerIconActive {
+    color: #2d3652;
+  }
+  .footerMenuName {
+    position: absolute;
+    margin-left: 52px;
+    display: none;
+  }
+  .footerNavbarMenu {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .footerNavbarMenu:hover,
+  .footerNavbarMenu:focus {
+    color: #2d3652;
+  }
+}

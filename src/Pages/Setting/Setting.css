@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.settingContainer {
+  background-image: linear-gradient(to bottom, #2d3652, #6579b8, #2d3652);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+.settingImgContainer {
+  height: 20vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.settingContent {
+  /* height: 77vh; */
+  width: 100vw;
+  /* border-bottom: 0.2px solid #F4F5FC; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settingProfilePic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+  width: 100%;
+  border: 1px solid #f4f5fc;
+  border-radius: 50%;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 0, 0, 0.1);
+}
+.settingProfileImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  width: 90%;
+  border: 1px solid #f4f5fc;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 0, 0, 0.1);
+}
+.settingText {
+  color: #f4f5fc;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.settingListOfDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* height: 100%; */
+  margin-top: 15px;
+  border-bottom: 0.2px solid #f4f5fc;
+}
+.settingList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid #2D3652; */
+  border: none;
+  width: 420px;
+  height: 77px;
+  border-top: 1px solid #fff;
+  margin: 0px 15px;
+}
+.settingTextDetails {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70px;
+  margin: 0%;
+  padding: 0%;
+  padding-left: 22px;
+}
+.settingTextDetails P {
+  height: 35px;
+  width: 100%;
+  margin-top: 5%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  color: #f4f5fc;
+}
+.settingHeaderText {
+  font-size: 16px;
+  font-weight: 400;
+}
+.settingDetailText {
+  font-size: 20px;
+  font-weight: 400;
+}
+.settingIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+}
+.settingEditIcon {
+  font-size: 24px;
+  color: #8ebbff;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .settingContent {
+    position: relative;
+    height: 80vh;
+  }
+  .settingImgContainer {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    left: 70px;
+    top: 60px;
+  }
+  .settingProfilePic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+  .settingProfileImg {
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  .settingListOfDetails {
+    margin-top: 0px;
+    height: 96%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .settingHeaderText {
+    font-size: 16px;
+  }
+  .settingDetailText {
+    font-size: 18px;
+  }
+  .settingList {
+    height: 66px;
+    border-bottom: 0.2px solid #f4f5fc;
+  }
+}

@@ -1,0 +1,24 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* Default, show the tooltip */
+.tooltip {
+  display: block;
+}
+.centered-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+/* Hide the tooltip on mobile devices */
+@media (max-width: 1024px) {
+  .tooltip {
+    display: none !important;
+  }
+}

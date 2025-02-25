@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+    height: 100%; */
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+/* .hide{
+    display: none;
+} */
+/* Media Query for mobile phones */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(to bottom, #2d3652, #6579b8, #2d3652);
+}
+.imgContainer {
+  top: 10%;
+  position: absolute;
+}
+.logo {
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.4);
+}
+.dataContainer {
+  position: absolute;
+  top: 43%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  border: 1px solid #6579b8;
+  margin-top: 20px;
+  width: 400px;
+  height: 275px;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right, #6579b8, #2d3652);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 40px;
+}
+.boxContainer input {
+  width: 328px;
+  height: 45px;
+  border: 1px solid #24293e;
+  border-radius: 7px;
+  background-color: #c5d8f6;
+  color: #24293e;
+  font-size: 17px;
+  padding-left: 10px;
+}
+.boxContainer input::placeholder {
+  font-size: 17px;
+  color: #24293e;
+}
+.boxContainer input:focus {
+  outline: none;
+}
+.loginBtnContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 70%;
+}
+.loginBtn {
+  width: 88px;
+  width: 88px;
+  height: 38px;
+  border-radius: 17px;
+  background-color: #8ebbff;
+  color: #24293e;
+  border: none;
+  font-weight: 700;
+  font-size: 17px;
+}
+.usernameInput {
+  margin-bottom: 20px;
+}
+.signupBtnLog {
+  position: absolute;
+  bottom: 200px;
+  left: 70%;
+  background-color: transparent;
+  border: none;
+  /* border-bottom: 1px solid #F4F5FC; */
+  color: #f4f5fc;
+  font-weight: 700;
+  font-size: 17px;
+}
+/* End media queries for mobile */
+
+/* Media Query for Desktops (Above 1024px) */
+@media (min-width: 1024px) {
+  .loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(to bottom, #2d3652, #6579b8, #2d3652);
+  }
+  .imgContainer {
+    top: 3%;
+    position: absolute;
+  }
+  .logo {
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.4);
+    width: 10vw;
+  }
+  .appName {
+    width: 10vw;
+    margin-top: 7px;
+    padding-left: 0;
+  }
+  .imgData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dataContainer {
+    position: absolute;
+    top: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #6579b8;
+    margin-top: 20px;
+    width: 400px;
+    height: 235px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #6579b8, #2d3652);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    /* display: none; */
+  }
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 40px;
+    top: 5vw;
+  }
+  .boxContainer input {
+    width: 328px;
+    height: 45px;
+    border: 1px solid #24293e;
+    border-radius: 7px;
+    background-color: #c5d8f6;
+    color: #24293e;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+  .boxContainer input::placeholder {
+    font-size: 17px;
+    color: #24293e;
+  }
+  .boxContainer input:focus {
+    outline: none;
+  }
+  .loginBtnContainer {
+    position: absolute;
+    bottom: 13px;
+    left: 71%;
+  }
+  .loginBtn {
+    width: 88px;
+    width: 88px;
+    height: 38px;
+    border-radius: 17px;
+    background-color: #8ebbff;
+    color: #24293e;
+    border: none;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .usernameInput {
+    margin-bottom: 20px;
+  }
+  .signupBtnLog {
+    position: absolute;
+    bottom: 40px;
+    left: 57%;
+    background-color: transparent;
+    border: none;
+    /* border-bottom: 1px solid #F4F5FC; */
+    color: #f4f5fc;
+    font-weight: 700;
+    font-size: 17px;
+    bottom: 120px;
+  }
+}
+/* End media queries for Deskstop */

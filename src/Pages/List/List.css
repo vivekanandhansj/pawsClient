@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.listContainer {
+  background-image: linear-gradient(to bottom, #2d3652, #6579b8, #2d3652);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.listContent {
+  height: 77vh;
+  width: 100vw;
+  border: 0.2px solid #f4f5fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listSearchContainer {
+  width: 88vw;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #8ebbff;
+  margin-top: 1vh;
+  position: relative;
+}
+.listSearchContainer input {
+  width: 88vw;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #c5d8f6;
+  color: #24293e;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: text;
+  padding-left: 10px;
+}
+.listSearchContainer input:focus {
+  box-shadow: none;
+}
+.listSearchIcon {
+  position: absolute;
+  top: 16px;
+  font-size: 20px;
+  right: 5px;
+  color: #24293e;
+}
+.listDetails {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* overflow-y: auto; */
+  margin-top: 10px; /*Emergency top margin 20241127*/
+}
+.listOfDetails {
+  display: flex;
+  height: 10vh;
+  flex-direction: row;
+}
+.listOfDetails.EmerDetails {
+  margin: 0px;
+  align-items: center;
+}
+.listEmerStatus {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  right: 0;
+}
+.listEmerStatus.online {
+  background-color: #0acea2;
+}
+.listEmerStatus.offline {
+  background-color: #ff0000;
+}
+.listEmerTime {
+  position: absolute;
+  right: 0px;
+  font-size: 15px;
+}
+.listImage {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #24293e;
+  border-radius: 50%;
+  margin: 15px 27px;
+  cursor: pointer;
+}
+.listProfileImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+.listInfo {
+  width: 66vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  position: relative;
+}
+.listInfo.EmerInfo {
+  height: 90px;
+  padding: 0px;
+  margin: 0px 0px;
+  padding-bottom: 17px;
+  padding-top: 10px;
+}
+.listInfo p {
+  margin: 10px 0px;
+}
+.listInfo.EmerInfo p {
+  margin: 0px 0px;
+  position: relative;
+}
+.listIdText {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f4f5fc;
+}
+.listInfoText {
+  font-size: 17px;
+  font-weight: 500;
+  color: #f4f5fc;
+}
+.listNotifyNew {
+  position: absolute;
+  top: 17px;
+  color: #f4f5fc;
+  right: 9px;
+  width: 45px;
+  height: 20px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #c5d8f6, #737e90);
+}
+.listNotifyNew h6 {
+  font-size: 16px;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #24293e, #666666);
+  background-clip: text;
+  display: inline;
+  margin-left: 5px;
+  padding-top: 10px;
+}
+/* for highlight notifications */
+.listOfDetails.listNewNotify {
+  background-color: #24293e;
+}
+
+.centered-loader,
+.noRecords {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.simplebar-scrollbar::before {
+  background-color: #8ebbff !important;
+}
+
+.noRecords p {
+  color: #ff6b6b;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* for desktop */
+@media (min-width: 1024px) {
+  .listContainer {
+    position: relative;
+  }
+  .listContent {
+    height: 80vh;
+  }
+  .listSearchContainer {
+    height: 30px;
+  }
+  .listSearchContainer input {
+    height: 30px;
+  }
+  .listSearchIcon {
+    top: 7px;
+    cursor: pointer;
+  }
+  .listInfo {
+    width: 88vw;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 27px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .listInfoText {
+    position: absolute;
+    right: 45px;
+  }
+
+  .listOfDetails {
+    height: 75px;
+  }
+  .listOfDetails.listNewNotify {
+    background-color: #24293e;
+  }
+  .listOfDetails:hover {
+    background-color: #24293e;
+  }
+  .listImage {
+    margin: 10px 27px;
+  }
+  .listNotifyNew {
+    top: 0px;
+    right: 0px;
+  }
+  .listInfo.EmerInfo p {
+    width: 30%;
+  }
+  .listInfo.EmerInfo {
+    width: 88vw;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 27px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .listOfDetails.EmerDetails {
+    height: 75px;
+  }
+  .listEmerTime {
+    position: absolute;
+    font-size: 15px;
+    left: 77vw;
+    width: 75px;
+    bottom: 36px;
+  }
+  .listEmerStatus {
+    top: 5px;
+  }
+}

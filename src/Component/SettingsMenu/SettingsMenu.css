@@ -1,0 +1,36 @@
+.menuContainer {
+  position: absolute;
+  right: 0px;
+  /* margin-right: 20px; */
+  border: 1px solid black;
+  /* padding-right: 20px; */
+  top: 70px;
+  z-index: 10000;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: #24293e;
+  border-radius: 10px;
+}
+.menuContainer div {
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: #f4f5fc;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.menuContainer div:hover {
+  background-color: #8ebbff;
+  color: #24293e;
+}
+@media (min-width: 1024px) {
+  .menuContainer {
+    position: absolute;
+    top: 45px;
+  }
+}

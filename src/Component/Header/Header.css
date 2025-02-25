@@ -1,0 +1,60 @@
+/* Default, show the tooltip */
+
+* {
+  outline: none;
+  border: none;
+}
+
+.tooltip {
+  display: block;
+}
+/* Hide the tooltip on mobile devices */
+@media (max-width: 1024px) {
+  .tooltip {
+    display: none !important;
+  }
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+.headerSettingsMenu {
+  margin-right: 25px;
+}
+.headerThreeDot {
+  font-size: 40px;
+  color: #8ebbff;
+  cursor: pointer;
+}
+.logout {
+  font-size: 27px;
+  color: #8ebbff;
+  cursor: pointer;
+}
+.headerBackContainer {
+  margin-right: 10px;
+}
+.headerBackIcon {
+  font-size: 25px;
+  color: #8ebbff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.headerName {
+  font-size: 22px;
+  font-weight: 500;
+  color: #f4f5fc;
+}
+@media (min-width: 1024px) {
+  .headerThreeDot {
+    font-size: 30px;
+    color: #8ebbff;
+    cursor: pointer;
+  }
+}

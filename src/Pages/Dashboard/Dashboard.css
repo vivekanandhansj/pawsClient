@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.dashboardContainer {
+  background-image: linear-gradient(to bottom, #2d3652, #6579b8, #2d3652);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
+  overflow: hidden;
+}
+.dashboardContent {
+  height: 77vh;
+  width: 100vw;
+  border-bottom: 0.2px solid #f4f5fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashTotalCounts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin: 5px 5px;
+  border-top: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.dashDogCount,
+.dashVolunteerCount {
+  height: 97px;
+  width: 200px;
+  margin: 1px 5px;
+  border: none;
+  border-radius: 10%/50%;
+  background-color: #3658d8;
+  color: #f4f5fc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dashDogCount p,
+.dashVolunteerCount p {
+  font-size: 19px;
+  margin: 10px;
+  font-weight: 600;
+  position: relative;
+}
+.dashCountIcon {
+  font-size: 19px;
+  position: absolute;
+  right: 0px;
+}
+.dashDailyCounts {
+  height: 220px;
+  width: 420px;
+  margin: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #1c2754;
+  border: none;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.dashDailyHeader {
+  height: 20px;
+  padding: 0px;
+  position: relative;
+}
+.dashDailyHeader p {
+  font-size: 19px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 10px;
+  color: #f4f5fc;
+  font-weight: 600;
+}
+.dashDailyHeader p span {
+  font-size: 19px;
+  position: absolute;
+  right: 5px;
+}
+.dashDailyDoughnut {
+  width: 100%;
+  height: 130px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+.dashDailyDoughnut span .dashDonutIcon {
+  font-size: 23px;
+  position: absolute;
+  color: #f4f5fc;
+}
+.dashDailyDoughnut span:first-of-type {
+  position: absolute;
+  top: 50px;
+  right: 220px;
+}
+.dashDailyDoughnut span.dashDonutPercent {
+  position: absolute;
+  color: #f4f5fc;
+  right: 75px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.dashDailyInfo {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+.dashDailyInfo p {
+  color: #f4f5fc;
+  font-weight: 600;
+}
+.dashDailyInfo p span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: #0acea2;
+  border-radius: 50%;
+}
+.dashDailyInfo p span.offline {
+  background-color: #ff6156;
+}
+.dashDateRangePicker {
+  height: 40px;
+  width: 420px;
+  /* margin: 5px 5px; */
+  border: none;
+  position: relative;
+  background-color: #1c2754;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.dashChart {
+  height: 300px;
+  width: 420px;
+  margin: 10px 5px;
+  margin-bottom: 10px;
+  border: none;
+  position: relative;
+  border-radius: 10px;
+  background-color: #1c2754;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.dashCalendarIcon {
+  color: #f4f5fc;
+}
+.dashCalendarIcon2 {
+  color: #f4f5fc;
+  font-size: 20px;
+}
+.DashCalendarBox {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.DashCalendarBox2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.dashArrowUp {
+  position: absolute;
+  color: #f4f5fc;
+  font-size: 20px;
+  top: 60px;
+  left: 5px;
+  z-index: 999;
+}
+.dashArrowRight {
+  color: #f4f5fc;
+  font-size: 20px;
+  position: absolute;
+  bottom: 6px;
+  right: 110px;
+  z-index: 999;
+}
+
+@media (min-width: 1024px) {
+  .dashboardContent {
+    position: relative;
+    height: 80vh;
+    border-top: 0.2px solid #f4f5fc;
+  }
+  .dashDateRangePicker {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    width: 45%;
+  }
+  .dashChart {
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    width: 45%;
+    height: 67vh;
+  }
+  .dashArrowUp {
+    top: 30%;
+  }
+  .dashArrowRight {
+    right: 35%;
+  }
+  .dashTotalCounts {
+    position: absolute;
+    right: 10px;
+    width: 50%;
+    top: 25px;
+    border: none;
+    height: 20%;
+  }
+  .dashDogCount,
+  .dashVolunteerCount {
+    height: 150px;
+    width: 390px;
+  }
+  .dashDogCount p,
+  .dashVolunteerCount p {
+    margin: 35px;
+    font-size: 20px;
+  }
+  .dashCountIcon {
+    font-size: 24px;
+  }
+
+  .dashDailyCounts {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    height: 60%;
+    width: 50%;
+    margin: 0px;
+  }
+  .dountChart {
+    height: 250px !important;
+    width: 200px !important;
+    position: absolute !important;
+    top: 10px;
+  }
+
+  .dashDailyHeader p {
+    font-size: 24px;
+  }
+  .dashDailyHeader p span {
+    font-size: 24px;
+  }
+
+  .dashDailyDoughnut span .dashDonutIcon {
+    top: 57px;
+    right: 80px;
+    font-size: 45px;
+  }
+
+  .dashDailyDoughnut span.dashDonutPercent {
+    top: 90px;
+    right: 90px;
+    font-size: 50px;
+  }
+
+  .dashDailyInfo p {
+    font-size: 20px;
+  }
+}

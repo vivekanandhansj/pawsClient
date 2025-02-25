@@ -1,0 +1,34 @@
+.dashDateRangePickerInput {
+  background-color: #1c2754;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+/* Mobile Styles (up to 440px) */
+@media (max-width: 440px) {
+  /* Modify Daterange Picker container or input for mobile */
+  .daterangepicker {
+    max-width: 90%;
+    position: absolute; /* Adjust calendar position on top */
+    z-index: 9999;
+    top: 260px !important;
+    left: 80px !important;
+  }
+}
+
+/* Desktop Styles (default behavior) */
+@media (min-width: 441px) {
+  /* No special mobile handling, it uses default settings */
+  .daterangepicker {
+    max-width: 500px; /* Adjust width if necessary */
+  }
+}
+@media (min-width: 1024px) {
+  .dashDateRangePickerInput {
+    width: 100%;
+  }
+}

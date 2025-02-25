@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.infoContainer {
+  background-image: linear-gradient(to bottom, #2d3652, #6579b8, #2d3652);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
+  overflow: hidden;
+}
+.infoContent {
+  height: 77vh;
+  width: 100vw;
+  border-bottom: 0.2px solid #f4f5fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoContent.settingContent {
+  height: 90vh;
+  border: none;
+}
+.infoImgContanier {
+  height: 20vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.infoProfilePic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+  width: 100%;
+  border: 1px solid #f4f5fc;
+  border-radius: 50%;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 0, 0, 0.1);
+}
+.infoProfileImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  width: 90%;
+  border: 1px solid #f4f5fc;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 0, 0, 0.1);
+}
+.infotext {
+  color: #f4f5fc;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.infoListOfDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+.infoList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid #2D3652; */
+  border: none;
+  width: 420px;
+  height: 77px;
+  border-top: 1px solid #fff;
+  margin: 0px 15px;
+}
+.infoTextDetails {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70px;
+  margin: 0%;
+  padding: 0%;
+  padding-left: 22px;
+  position: relative;
+}
+.infoTextDetails p {
+  height: 35px;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  color: #f4f5fc;
+}
+.infoHeaderText {
+  font-size: 16px;
+  font-weight: 400;
+}
+.infoDetailText {
+  font-size: 20px;
+  font-weight: 400;
+}
+.infoIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+}
+.infoEditIcon {
+  font-size: 24px;
+  color: #8ebbff;
+  cursor: pointer;
+}
+.infoEditInput {
+  border: none;
+  outline: none;
+  background-color: #c5d8f6;
+  border-radius: 7px;
+  font-size: 20px;
+  color: #f4f5fc;
+  font-weight: 400;
+  border-bottom: 0.1px solid #24293e;
+  cursor: text;
+  height: 35px;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  color: #24293e;
+  padding-left: 10px;
+  width: 336px;
+}
+.infoEditInput::placeholder {
+  font-size: 18px;
+  color: #24293e;
+}
+.infoVaccineChkBx {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  top: 45px;
+  width: 20px;
+  accent-color: #c5d8f6;
+}
+.centered-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.simplebar-scrollbar::before {
+  background-color: #8ebbff !important;
+}
+@media (min-width: 1024px) {
+  .infoContent {
+    position: relative;
+    height: 80vh;
+  }
+  .infoContent.settingContent {
+    height: 90vh;
+    border: none;
+  }
+  .infoImgContanier {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    left: 70px;
+    top: 60px;
+  }
+  .infoProfilePic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+  .infoProfileImg {
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  .infoListOfDetails {
+    margin-top: 0px;
+    height: 96%;
+  }
+  .infoHeaderText {
+    font-size: 16px;
+  }
+  .infoDetailText {
+    font-size: 18px;
+  }
+  .infoList {
+    height: 66px;
+  }
+  .infoList.settingList {
+    height: 60px;
+  }
+  .infoEditInput.settingEditInput {
+    height: 30px;
+  }
+  .infoVaccineChkBx {
+    top: 37px;
+  }
+}
